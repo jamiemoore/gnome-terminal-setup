@@ -1,0 +1,11 @@
+#!/bin/sh
+
+gconftool-2 --set /apps/gnome-terminal/profiles/Default/use_system_font --type bool false
+gconftool-2 --set /apps/gnome-terminal/profiles/Default/bold_color_same_as_fg --type bool true
+gconftool-2 --set /apps/gnome-terminal/profiles/Default/font --type string "Monospace 12"
+gconftool-2 --set /apps/gnome-terminal/profiles/Default/use_theme_colors --type bool false
+gconftool-2 --set /apps/gnome-terminal/profiles/Default/foreground_color --type string "#D0D0D0"
+gconftool-2 --set /apps/gnome-terminal/profiles/Default/background_color --type string "#151515"
+gconftool-2 --set /apps/gnome-terminal/profiles/Default/allow_bold --type bool false
+gconftool-2 --set /apps/gnome-terminal/profiles/Default/silent_bell --type bool true
+gconftool-2 --set /apps/gnome-terminal/profiles/Default/bold_color_same_as_fg --type bool true
