@@ -8,7 +8,7 @@ Colour04="#5f819d" #Blue
 Colour05="#b294bb" #Purple
 Colour06="#8abeb7" #Aqua
 Colour07="#969896" #LightGrey 
-Colour08="#ffaf00" #DarkGrey
+Colour08="#373B41" #DarkGrey
 Colour09="#cc6666" #LightRed
 Colour10="#b5bd68" #LightGreen
 Colour11="#f0c674" #Yellow
@@ -23,12 +23,12 @@ FG_Colour=$Colour15
 BG_Colour=$Colour00
 
 gconftool --set /apps/gnome-terminal/profiles/Default/use_system_font --type bool false
-#gconftool --set /apps/gnome-terminal/profiles/Default/bold_color_same_as_fg --type bool true
+gconftool --set /apps/gnome-terminal/profiles/Default/bold_color_same_as_fg --type bool true
 gconftool --set /apps/gnome-terminal/profiles/Default/font --type string "Monospace 11"
 gconftool --set /apps/gnome-terminal/profiles/Default/use_theme_colors --type bool false
 gconftool --set /apps/gnome-terminal/profiles/Default/foreground_color --type string $FG_Colour
 gconftool --set /apps/gnome-terminal/profiles/Default/background_color --type string $BG_Colour 
-#gconftool --set /apps/gnome-terminal/profiles/Default/allow_bold --type bool false
+gconftool --set /apps/gnome-terminal/profiles/Default/allow_bold --type bool false
 gconftool --set /apps/gnome-terminal/profiles/Default/silent_bell --type bool true
-#gconftool --set /apps/gnome-terminal/profiles/Default/bold_color_same_as_fg --type bool true
+gconftool --set /apps/gnome-terminal/profiles/Default/bold_color_same_as_fg --type bool true
 gconftool --type string --set /apps/gnome-terminal/profiles/Default/palette $ColourPalette 
