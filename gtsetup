@@ -1,6 +1,8 @@
 #!/bin/sh
 
-Colour00="#1c1c1c" #Black 
+#Hybrid: https://gist.github.com/w0ng/3278077
+
+Colour00="#1D1F21" #Black 
 Colour01="#a54242" #Red
 Colour02="#8C9440" #Green
 Colour03="#de935f" #Orange
@@ -17,10 +19,35 @@ Colour13="#b294bb" #LightPurple
 Colour14="#8abeb7" #LightAqua
 Colour15="#c5c8c6" #White
 
+
+#Base16 - Tommorw night
+#Colour00="#282A2E" #Black 
+#Colour01="#A54242" #Red
+#Colour02="#8C9440" #Green
+#Colour03="#DE935F" #Orange
+#Colour04="#5F819D" #Blue
+#Colour05="#85678F" #Purple
+#Colour06="#5E8D87" #Aqua
+#Colour07="#707880" #LightGrey 
+#Colour08="#373B41" #DarkGrey
+#Colour09="#CC6666" #LightRed
+#Colour10="#B5BD68" #LightGreen
+#Colour11="#F0C674" #Yellow
+#Colour12="#81A2BE" #LightBlue
+#Colour13="#B294BB" #LightPurple
+#Colour14="#8ABEB7" #LightAqua
+#Colour15="#C5C8C6" #White
+
+
+
 ColourPalette="${Colour00}:${Colour01}:${Colour02}:${Colour03}:${Colour04}:${Colour05}:${Colour06}:${Colour07}:${Colour08}:${Colour09}:${Colour10}:${Colour11}:${Colour12}:${Colour13}:${Colour14}:${Colour15}"
 
 FG_Colour=$Colour15
 BG_Colour=$Colour00
+
+
+#FG_Colour="#C5C8C6"
+#BG_Colour="#1D1F21"
 
 gconftool --set /apps/gnome-terminal/profiles/Default/use_system_font --type bool false
 gconftool --set /apps/gnome-terminal/profiles/Default/bold_color_same_as_fg --type bool true
